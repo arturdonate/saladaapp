@@ -51,13 +51,9 @@ if($("#itensCarrinho").length == 1){
    dados.listarItemCarrinho(); 
 }
 
-$("#cadastrar").click(function(){
-    var email = document.getElementById('email').value;
-    var nome = document.getElementById('nome').value;
-    var sobrenome = document.getElementById('sobrenome').value;
-    var data_nasci = document.getElementById('data_nasci').value;
-    var senha = document.getElementById('senha').value;
+$("#salvar").click(function(){
+    
+    var nome =  document.getElementById('nome').value
    
-    dados.cadastrarUser(nome,sobrenome, data_nasci,email,senha);
-    alert('usuario cadastrado')
+    alert (nome);
 })
