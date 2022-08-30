@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+}
+
+html,
+body{
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: url('../img/slogan.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.dv1{
+    background-color: rgba(255, 255, 255, 0.89);
+}
+
+header{
+    height: 8%;
+    background-color: rgba(0, 128, 0, 0.449);
+}
+
+section{
+    height: 82%;
+    background-color: rgba(0, 128, 0, 0.077);
+}
+
+footer{
+    height: 10%;
+    background-color: rgba(0, 128, 0, 0.449);
+}
+
+.titulo{
+    height: 50px;
+}
+
+.ingred{
+    font-size: 14px;
+}
+
+.img1{
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+}
+
+.card-icon{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    text-shadow: 2px 2px 3px white;
+}
+.naoAtivo{
+    color: black;
+}
+
+.Ativo{
+    color: rgb(34, 202, 34);
+}
+
+.imgSalada{
+    height: 40%;
+}
+
+.titulo1{
+    font-size: 20px;
+    
+}
+
+.titulo2{
+    font-size: 17px;
+}
+
+.titulo3{
+    font-size: 14px;
+}
+
+input#quantidade{
+    background-color: rgb(189, 221, 140);
+}
+
+span .verde{
+    cursor: pointer;
+}
+
+.voltar{
+    font-size: 20px;
+}
+
+.imgCarrinho{
+    height: 40px;
+    width: 40px;
+}
+
+
+.imgLogin{
+    height: 80px;
+}
+
+.login{
+    background-color: white;
+}
+
+.imgTitulo{
+    height: 100px;
+}
+
+.loginFundo{
+    background-image: url('../img/fundoSaladas.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.imgUser{
+    height: 35px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

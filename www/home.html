@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Saladas Prontas</title>
+</head>
+<body>
+    <header class="rounded-bottom">
+        <div class="position-relative top-50 start-50 translate-middle text-center">
+           <img class="titulo " src="img/titulo.png" alt=""> 
+        </div>        
+    </header>
+
+    <section id="principal">
+        <div class="h-100 dv0">
+
+            <div class="h-100 p-1 dv1 overflow-auto" id="listarSaladas">
+
+                <!--Saladas-->
+                <div class="border-bottom p-2 salada">
+                    <div class="row p-2">
+                        <div class="col-9">
+                            <h6 class="m-0"><strong>Salada de Alface</strong></h6>
+                            <div class="ingred m-0 w-100">
+                                Alface, Cebola, sal, Queijo, Baconds ffa ssfa 
+                            </div>
+                            <div class="valor">
+                                R$27,00
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img class="img1" src="img/salada1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!---->
+
+                <!--Saladas-->
+                <div class="border-bottom p-2 salada" value="1" valor="18">
+                    <div class="row p-2">
+                        <div class="col-9">
+                            <h6 class="m-0"><strong>Salada de Alface</strong></h6>
+                            <div class="ingred m-0 w-100">
+                                Alface, Cebola, sal, Queijo, Baconds ffa ssfa 
+                            </div>
+                            <div class="valor">
+                                R$18,00
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <img class="img1" src="img/salada1.jpg" alt="">
+                        </div>
+                    </div> 
+                </div>
+                <!---->
+                
+
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="px-4 rounded-top">
+        <div class="position-relative top-50 start-50 translate-middle text-center">
+            <div class="row text-center botoesFooter">
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class="card-icon Ativo rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-shop"></i>
+                      </div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class="card-icon naoAtivo rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-search"></i>
+                      </div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class="card-icon naoAtivo  rounded-circle d-flex align-items-center justify-content-center">
+                        <i class="bi bi-cart4"></i>
+                      </div>
+                </div>
+                <div class="col-3 d-flex align-items-center justify-content-center">
+                    <div class="card-icon naoAtivo rounded-circle d-flex align-items-center justify-content-center">
+                        <img class="imgUser" src="img/user.png" alt="">
+                      </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/app.js"></script>
+    <script type="module" src="js/popularsaladas.js"></script>
+    <script src="js/nav.js"></script>
+
+    <script>
+        function dadosSalada(idSalada){
+
+            localStorage.setItem('idSalada',idSalada);
+            window.location.assign('salada.html');
+        }
+    </script>
+</body>
+</html>
