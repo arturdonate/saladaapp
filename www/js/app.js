@@ -59,4 +59,5 @@ $("#cadastrar").click(function(){
     var senha = document.getElementById('senha').value;
    
     dados.cadastrarUser(nome,sobrenome, data_nasci,email,senha);
+    alert('usuario cadastrado')
 })
