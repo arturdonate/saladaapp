@@ -51,13 +51,21 @@ if($("#itensCarrinho").length == 1){
    dados.listarItemCarrinho(); 
 }
 
-$("#cadastrar").click(function(){
-    var email = document.getElementById('email').value;
-    var nome = document.getElementById('nome').value;
-    var sobrenome = document.getElementById('sobrenome').value;
-    var data_nasci = document.getElementById('data_nasci').value;
-    var senha = document.getElementById('senha').value;
-   
-    dados.cadastrarUser(nome,sobrenome, data_nasci,email,senha);
-    alert('usuario cadastrado')
+$("#salvar").click(function(){
+    
+    var nome =  document.getElementById('nome').value;
+    var email =  document.getElementById('email').value;
+    var senha =  document.getElementById('senha').value;
+    var confsenha =  document.getElementById('confsenha').value;
+    
+    if(nome.length > 0 && email.length > 0 && senha.length >0){
+        if(senha == confsenha){
+            dados.cadastrarUser(nome, email, senha);
+            window.location.assign("login.html");
+        }else{
+            alert ("As senhas não estão iguais")
+        }
+    }else{
+        alert("Todos os campos devem ser preenchidos");
+    }
 })

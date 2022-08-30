@@ -62,14 +62,14 @@ function listarSaladas(){
 
 //Funções da tela Login
 
-function cadastrarUser(pnome,psobrenome, pdata_nasci, pemail,psenha){
+function cadastrarUser(pnome,pemail,psenha){
     db.transaction(function (tx) {
         tx.executeSql('SELECT * FROM usuarios where email = ?', [pemail], function (tx, results) {
             var len = results.rows.length;
             
             if(len == 0){
-                var sql = "Insert into usuarios (nome, ,sobrenome,data_nasci, email,senha, ) values (?,?,?,?,?)";
-                tx.executeSql(sql, [pnome,psobrenome, pdata_nasci,pemail,psenha]); 
+                var sql = "Insert into usuarios (nome, email,senha) values (?,?,?)";
+                tx.executeSql(sql, [pnome,pemail,psenha]); 
             }
         })
     })
